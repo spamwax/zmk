@@ -87,6 +87,7 @@ module.exports = {
             "keymaps/behaviors/power",
             "keymaps/behaviors/soft-off",
             "keymaps/behaviors/studio-unlock",
+            "keymaps/behaviors/tri-state.md ",
           ],
         },
         "keymaps/modifiers",
