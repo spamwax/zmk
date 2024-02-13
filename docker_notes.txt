@@ -1,0 +1,6 @@
+To update content of Docker volume "my_zmk" after updating our fork of zmk, do:
+
+docker container create --name dummy -v my_zmk:/zmk hello-world
+dk cp /tank/anbaar/projects/hobbies/zmk_firmwares/zmk/. dummy:/zmk
+dk rm dummy
+
