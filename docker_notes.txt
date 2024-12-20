@@ -4,3 +4,11 @@ docker container create --name dummy -v my_zmk:/zmk hello-world
 dk cp /tank/anbaar/projects/hobbies/zmk_firmwares/zmk/. dummy:/zmk
 dk rm dummy
 
+Or:
+
+dk run -ti --rm -v /tank/anbaar/projects/hobbies/zmk_firmwares/zmk:/orig --mount type=volume,source=my_zmk,target=/vol mcr.microsoft.com/devcontainers/base bash
+
+Then within container:
+
+cd /
+rsync -av orig/ vol/
